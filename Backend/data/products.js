@@ -38,7 +38,7 @@ const products = [
         description:
             'Tortilja punjena pilećim fileom, povrćem i specijalnim sosom.',
         category: 'Wrap',
-        price: 650,
+        price: 750,
         countInStock: 12,
         rating: 4.7,
         numReviews: 14,
@@ -47,7 +47,7 @@ const products = [
         name: 'Pomfrit',
         image: 'https://images.unsplash.com/photo-1576107232684-1279f390859f',
         description:
-            'Hrskavi pomfrit serviran uz ketchup i majonez.',
+            'Svježe pripremljen pomfrit sa hrskavom koricom i domaćim sosovima.',
         category: 'Prilozi',
         price: 350,
         countInStock: 20,
@@ -58,7 +58,7 @@ const products = [
         name: 'Pepsi',
         image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e',
         description:
-            'Pepsi rashladjen 0.5L.',
+            'Pepsi rashlađen 0.5L.',
         category: 'Piće',
         price: 250,
         countInStock: 25,
