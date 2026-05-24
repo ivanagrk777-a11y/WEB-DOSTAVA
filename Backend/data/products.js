@@ -5,7 +5,7 @@ const products = [
         description:
             'Sočan burger sa junećim mesom, sirom, zelenom salatom i domaćim sosom.',
         category: 'Burgeri',
-        price: 8.50,
+        price: 850,
         countInStock: 15,
         rating: 4.8,
         numReviews: 18,
@@ -16,7 +16,7 @@ const products = [
         description:
             'Ukusan cheeseburger sa topljenim sirom, krastavcima i pomfritom.',
         category: 'Burgeri',
-        price: 9.00,
+        price: 900,
         countInStock: 10,
         rating: 4.9,
         numReviews: 22,
@@ -27,7 +27,7 @@ const products = [
         description:
             'Pizza sa šunkom, pečurkama, sirom i domaćim paradajz sosom.',
         category: 'Pizza',
-        price: 11.50,
+        price: 1000,
         countInStock: 8,
         rating: 5.0,
         numReviews: 30,
@@ -38,7 +38,7 @@ const products = [
         description:
             'Tortilja punjena pilećim fileom, povrćem i specijalnim sosom.',
         category: 'Wrap',
-        price: 7.50,
+        price: 650,
         countInStock: 12,
         rating: 4.7,
         numReviews: 14,
@@ -49,18 +49,18 @@ const products = [
         description:
             'Hrskavi pomfrit serviran uz ketchup i majonez.',
         category: 'Prilozi',
-        price: 3.50,
+        price: 350,
         countInStock: 20,
         rating: 4.6,
         numReviews: 11,
     },
     {
-        name: 'Coca Cola',
+        name: 'Pepsi',
         image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e',
         description:
-            'Hladna Coca Cola 0.5L.',
+            'Pepsi rashladjen 0.5L.',
         category: 'Piće',
-        price: 2.50,
+        price: 250,
         countInStock: 25,
         rating: 4.9,
         numReviews: 19,
