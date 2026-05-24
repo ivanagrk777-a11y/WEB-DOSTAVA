@@ -50,7 +50,7 @@ const PlaceOrderScreen = () => {
 
         try {
 
-            const res = await createOrder({
+            await createOrder({
                 orderItems: cart.cartItems,
                 shippingAddress: cart.shippingAddress,
                 paymentMethod: cart.paymentMethod,
@@ -62,11 +62,13 @@ const PlaceOrderScreen = () => {
 
             dispatch(clearCartItems());
 
-            navigate(`/order/${res._id}`);
+            toast.success('Porudžbina uspješno kreirana');
+
+            navigate('/');
 
         } catch (err) {
 
-            toast.error(err);
+            toast.error('Greška pri kreiranju porudžbine');
         }
     };
 
@@ -216,7 +218,7 @@ const PlaceOrderScreen = () => {
 
                                 {error && (
                                     <Message variant='danger'>
-                                        {error}
+                                        Greška pri učitavanju
                                     </Message>
                                 )}
 
@@ -227,7 +229,7 @@ const PlaceOrderScreen = () => {
                                 <Button
                                     type='button'
                                     className='btn-block'
-                                    disabled={cart.cartItems === 0}
+                                    disabled={cart.cartItems.length === 0}
                                     onClick={placeOrderHandler}
                                 >
                                     Potvrdi porudžbinu
