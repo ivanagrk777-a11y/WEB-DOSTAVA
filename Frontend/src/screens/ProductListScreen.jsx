@@ -47,7 +47,7 @@ const ProductListScreen = () => {
       }
     }
   };
-
+   //admin upravljanje proizvodima
   return (
     <>
       <Row className='align-items-center'>
