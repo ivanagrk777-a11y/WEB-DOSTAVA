@@ -1,15 +1,7 @@
 import { useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 
-import {
-    Form,
-    Row,
-    Col,
-    Image,
-    Card,
-    Button,
-    Badge,
-} from 'react-bootstrap'
+import { Form,Row,Col,Image,Card,  Button, Badge} from 'react-bootstrap'
 
 import Rating from '../components/Rating'
 import Loader from '../components/Loader'

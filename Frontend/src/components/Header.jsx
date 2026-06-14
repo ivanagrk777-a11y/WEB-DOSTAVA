@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Badge, Navbar, Nav,Container,NavDropdown} from 'react-bootstrap';
+import { Badge, Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
 
@@ -108,6 +108,14 @@ const Header = () => {
                                             Profil
                                         </NavDropdown.Item>
                                     </LinkContainer>
+
+                                    {userInfo.isAdmin && (
+                                        <LinkContainer to='/admin'>
+                                            <NavDropdown.Item>
+                                                Admin panel
+                                            </NavDropdown.Item>
+                                        </LinkContainer>
+                                    )}
 
                                     <NavDropdown.Item onClick={logoutHandler}>
                                         Odjava
